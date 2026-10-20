@@ -1,8 +1,8 @@
-# snap2cal
+# Quick-Calendar
 
 **Press a hotkey, drag a box over an email or text message, and the event lands in your Google Calendar.**
 
-snap2cal is a small Windows tray app. A vision model reads the part of the screen you select and extracts the event (meeting, interview, exam, appointment, reservation, deadline). If everything is clear, the event is created silently with an **Undo** button. If something is ambiguous (is `04/05` April 5th or May 4th? what time zone? what year?), it asks you a quick question about only that field.
+Quick-Calendar is a small Windows tray app. A vision model reads the part of the screen you select and extracts the event (meeting, interview, exam, appointment, reservation, deadline). If everything is clear, the event is created silently with an **Undo** button. If something is ambiguous (is `04/05` April 5th or May 4th? what time zone? what year?), it asks you a quick question about only that field.
 
 - Windows 10/11, runs in the system tray, optionally starts with Windows
 - Free to run: Google Calendar API (free) + Gemini API free tier (no credit card)
@@ -70,7 +70,7 @@ GEMINI_API_KEY=your-key-here
 
 ### 3. Create your own Google Calendar access (one time, about 10 minutes)
 
-snap2cal needs permission to add events to *your* calendar. Google requires every app to have its own "OAuth client", so you create one in your own free Google Cloud project. No billing or credit card is needed. (Menu names change occasionally; use the search bar at the top of the console if you can't find something.)
+This app needs permission to add events to *your* calendar. Google requires every app to have its own "OAuth client", so you create one in your own free Google Cloud project. No billing or credit card is needed. (Menu names change occasionally; use the search bar at the top of the console if you can't find something.)
 
 1. Open <https://console.cloud.google.com> and create a **new project** (any name, e.g. `snap2cal`).
 2. **Enable the Calendar API:** *APIs & Services → Library*, search **Google Calendar API**, click **Enable**.
