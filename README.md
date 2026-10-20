@@ -3,9 +3,9 @@
 
 **Press a hotkey, drag a box over an email or text message, and the event lands in your Google Calendar.**
 
-Quick-Calendar is a small Windows tray app. A vision model reads the part of the screen you select and extracts the event (meeting, interview, exam, appointment, reservation, deadline). If everything is clear, the event is created silently with an **Undo** button. If something is ambiguous (is `04/05` April 5th or May 4th? what time zone? what year?), it asks you a quick question about only that field.
+Quick-Calendar is a small Windows tray app. A vision model reads the part of the screen you select and extracts the event (meeting, interview, event poster, appointment, reservation, hangout). If everything is clear, the event is created silently and automatically with an **Undo** button. If something is ambiguous (is `04/05` April 5th or May 4th? what time zone? what year?), it asks you a quick question about only that field.
 
-
+Everything here was vibe coded, I built this mainly for myself. It solved a problem for me and hopefully it will for you. 
 
 - Windows 10/11, runs in the system tray, optionally starts with Windows
 - Free to run: Google Calendar API (free) + Gemini API free tier (no credit card)
@@ -68,8 +68,6 @@ pip install -r requirements.txt
 ```
 GEMINI_API_KEY=your-key-here
 ```
-
-`config.env` is git-ignored. Never commit it.
 
 ### 3. Create your own Google Calendar access (one time, about 10 minutes)
 
@@ -160,7 +158,7 @@ Run the tests: `python -m unittest discover tests`
 ## Limitations
 
 - Windows only (uses the Windows registry, `ctypes.windll`, and global hotkeys).
-- Reading screenshots depends on an AI model and can be wrong. The ask-when-unsure rules are a safety net, not a guarantee. Check your calendar for anything important.
+- Reading screenshots depends on an AI model and can be wrong. The ask-when-unsure rules are a safety net, not a guarantee. Check your calendar for anything important. (Though I haven't encountered any mistake yet but it's still better to be safe) 
 - Only Google Calendar is supported (primary calendar).
 - Provided as-is, with no warranty or support.
 
