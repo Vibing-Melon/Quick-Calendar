@@ -1,9 +1,11 @@
 # Quick-Calendar
+<img width="1672" height="941" alt="From Inbox to Calendar" src="https://github.com/user-attachments/assets/b137cba4-7f05-4f46-8da4-f039043bfedf" />
 
 **Press a hotkey, drag a box over an email or text message, and the event lands in your Google Calendar.**
 
 Quick-Calendar is a small Windows tray app. A vision model reads the part of the screen you select and extracts the event (meeting, interview, exam, appointment, reservation, deadline). If everything is clear, the event is created silently with an **Undo** button. If something is ambiguous (is `04/05` April 5th or May 4th? what time zone? what year?), it asks you a quick question about only that field.
-![Uploading From Inbox to Calendar.png…]()
+
+
 
 - Windows 10/11, runs in the system tray, optionally starts with Windows
 - Free to run: Google Calendar API (free) + Gemini API free tier (no credit card)
