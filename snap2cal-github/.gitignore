@@ -1,0 +1,18 @@
+# Secrets and personal data: NEVER commit these
+credentials.json
+token.json
+config.env
+.autostart_initialized
+*.log
+
+# Build output
+dist/
+build/
+*.spec
+snap2cal.ico
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
