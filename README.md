@@ -49,7 +49,7 @@ You need: Windows, Python 3.11+, a Google account.
 ### 1. Get the code
 
 ```
-git clone https://github.com/<your-username>/snap2cal.git
+git clone https://github.com/Vibing-Melon/Quick-Calendar.git
 cd snap2cal
 pip install -r requirements.txt
 ```
